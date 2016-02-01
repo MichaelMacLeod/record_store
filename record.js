@@ -8,12 +8,6 @@ var Record = function(artist, title, price){
   // console.log(record1);
 
 
-// var Store = function(name, city){
-//   this.name = name;
-//   this.city = city;
-//   // this.records = records;
-// };
 
 module.exports = Record;
-// module.exports = Store;
 
