@@ -1,23 +1,25 @@
 var assert = require('assert');
 var Record = require('./record_store');
 
-
-// # JS Record Store
-// ### Learning Objectives
-
-// - Implement an OO JS program using the 'new' keyword
-// - Practice adding methods to objects
-// - Using JS data structures and loops
-// - Practice building a TDD program from scratch
-
-
-
-// ### Requirements
-
+// //RESETTER: 
+// describe('store', function(){
+//   beforeEach(function(){
+//     testStore = new RecordStore('name', 'city');
+//     testRecord = new Record('name', 'title', 0);
+//   });
 
 
 // - Create a constructor to create Record objects with artist, title, price
-// - Create a few records
+
+// Create a few records
+describe("Record", function(){
+  it('should tell us the name of the records in the store', function(){
+    var record1 = new Record('Friendly Fires', 'Pala', 10.99);
+    assert.equal('Friendly Fires', record1.artist);
+  });
+});
+
+
 // - Create a RecordStore that has a name, city and multiple records in it's inventory
 // - Give the RecordStore a balance i.e. cash in bank.
 // - Add some records to your RecordStore.
@@ -25,4 +27,3 @@ var Record = require('./record_store');
 // - Create a method so that the RecordStore can sell a record. Adjust the cash in bank to take into account the price of the record sold
 // - Create a method that reports on the financial situation of the store. Cash and value of inventory.
 // - Create a RecordCollector (or customer) constructor who can buy and sell records.
-// - Use TDD all the way through!
